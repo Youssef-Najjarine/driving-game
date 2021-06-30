@@ -1,10 +1,6 @@
 const car = document.querySelector('img');
 
-
 document.addEventListener('keydown', handleKeyDown);
-
-let carDirection = 'right';
-
 
 function handleKeyDown(event) {
   let keyPressed = event.key;
@@ -26,5 +22,20 @@ function handleKeyDown(event) {
     car.classList.remove('up');
     car.classList.remove('left');
     car.classList.add('down');
+  }
+
+  if (keyPressed === ' ') {
+    let startEngine = setInterval(handleSetInterval, 16);
+
+  }
+}
+
+
+
+function handleSetInterval() {
+  acceleration.left += 5;
+  car.style.left = `${acceleration.left}px`;
+  if (acceleration.left === 1900) {
+    acceleration.left = 0;
   }
 }
