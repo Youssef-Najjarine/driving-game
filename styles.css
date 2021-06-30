@@ -1,4 +1,4 @@
-.blackBox {
+.greenBackGround {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -8,11 +8,22 @@
 }
 
 img {
-
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   width: 200px;
+}
+
+img.left {
+  transform: rotate(180deg);
+}
+
+img.up {
+   transform: rotate(-90deg);
+}
+
+img.down {
+  transform: rotate(90deg);
 }
