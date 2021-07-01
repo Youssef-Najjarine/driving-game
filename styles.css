@@ -7,23 +7,30 @@
   background-color: rgb(30, 144, 30);
 }
 
-img {
+.img1 {
   position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
   width: 200px;
 }
 
-img.left {
+.img2 {
+  position: sticky;
+  top: 100px;
+  left: 100px;
+  right: 0;
+  width: 250px;
+}
+
+.img1.left {
   transform: rotate(180deg);
 }
 
-img.up {
+.img1.up {
    transform: rotate(-90deg);
 }
 
-img.down {
+.img1.down {
   transform: rotate(90deg);
 }
