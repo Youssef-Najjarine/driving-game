@@ -1,5 +1,5 @@
 let carDirection = 'right';
-
+let spaceNumber = 0;
 
 let acceleration = {
   left: 0,
