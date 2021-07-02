@@ -47,5 +47,24 @@ function handleSetInterval() {
   if (carDirection === 'right') {
     acceleration.left += 10;
     car.style.left = `${acceleration.left}px`;
+  } else if (carDirection === 'down') {
+    acceleration.top += 10;
+    car.style.top = `${acceleration.top}px`;
+  } else if (carDirection === 'left') {
+    acceleration.left -= 10;
+    car.style.left = `${acceleration.left}px`;
+  } else if (carDirection === 'up') {
+    acceleration.top -= 10;
+    car.style.top = `${acceleration.top}px`;
+  }
+
+  if (acceleration.left === 1900) {
+    acceleration.left = -200;
+  } else if (acceleration.left === -200) {
+    acceleration.left = 1900;
+  } else if (acceleration.top === -200) {
+    acceleration.top = 900;
+  } else if (acceleration.top === 1000) {
+    acceleration.top = -200;
   }
 }
