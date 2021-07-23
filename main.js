@@ -92,13 +92,6 @@ function handleSetInterval() {
     acceleration.top = 900;
   } else if (acceleration.top === 1000) {
     acceleration.top = -200;
-  }
-  // stationary dots
-  // if (acceleration.left >= 810 && acceleration.top === 570) {
-  //   console.log('You loose!');
-  // }
-  // moving dots
-  if (acceleration.left === 1000 && acceleration.top === dot1Number) {
-    console.log('You loose!');
+
   }
 }
